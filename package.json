@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/BenxinNiu/Image-Search-Abstraction-Layer#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "mongodb": "^2.2.26"
   }
 }
