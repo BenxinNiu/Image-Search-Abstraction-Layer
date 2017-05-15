@@ -37,7 +37,9 @@ app.get('/search/:word',(req,res)=>{
 
 app.get('/recent',(req,res)=>{
   mongo.connect(mongoURL,(err,db)=>{
-  if(err){db.close();res.sendStatus(500);}
+  if(err){db.close();
+          res.sendStatus(500);
+         }
   else{
     var searched=db.collection('image-abstraction');
     searched.find().toArray(function(err,docs){
